@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Responsive Header</title>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">MyWebsite</div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="menu mobile-menu" id="mobileMenu">
+        <!-- <nav class="menu "> -->
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#settings">Settings</a>
+            <a href="#contact">Contact</a>
+            <button class="mobile-menu-btn">X</button>
+        </nav>
+        <!-- <nav class=">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#settings">Settings</a>
+            <a href="#contact">Contact</a>
+        </nav> -->
+    </header>
+
+<main>
+    <div class="container">
+      <div class="sidebar">
+          <h2>အဘိဓမ္မာ</h2>
+          <ul>
+              <li><a href="#" onclick="showContent('kutolseit')">အကုသိုလ်စိတ် ၁၂-ပါး</a></li>
+              <li><a href="#" onclick="showContent('ahotseit')">အဟိတ်စိတ် ၁၈-ပါး</a></li>
+              <li><a href="#" onclick="showContent('other')">Other Topics</a></li>
+          </ul>
+      </div>
+
+      <div class="content">
+          <div id="kutolseit" style="display: none;">
+              <h2>အကုသိုလ်စိတ်</h2>
+              <p>Here is the content about Kutolseit.</p>
+
+              <!-- Subtopics for Kutolseit -->
+              <div class="subtopic">
+                  <h3>Subtopics:</h3>
+                  <ul>
+                      <li><a href="#" onclick="showSubContent('lobamuseit')">လောဘမူစိတ်</a></li>
+                      <li><a href="#" onclick="showSubContent('dosamuseit')">ဒေါသမူစိတ်</a></li>
+                      <li><a href="#" onclick="showSubContent('Malha')">မောဟမူစိတ်</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div id="ahotseit" style="display: none;">
+              <h2>အဟိတ်စိတ်</h2>
+              <p>Here is the content about Ahotseit.</p>
+          </div>
+
+          <div id="other" style="display: none;">
+              <h2>Other Topics</h2>
+              <p>Here are other topics.</p>
+          </div>
+
+          <!-- Subcontent areas -->
+          <div id="lobamuseit" style="display: none;">
+              <h2>လောဘမူစိတ်</h2>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+          </div>
+
+          <div id="dosamuseit" style="display: none;">
+              <h2>ဒေါသမူစိတ်</h2>
+              <p>This is the content for ဒေါသမူစိတ်.</p>
+          </div>
+
+          <div id="Malha" style="display: none;">
+              <h2>မောဟ</h2>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+              <p> သောမနဿသဟဂုတ် ဒိဋ္ဌိဂတသမ္ပယုတ် အသင်္ခါရိကစိတ် ၁-ပါး</p>
+          </div>
+      </div>
+  </div>
+
+      <footer class="footer">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+      </footer>
+    </div>
+  </main>
+<script src="script.js"></script>
+    <!-- <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('show');
+        }
+    </script> -->
+</body>
+</html>
